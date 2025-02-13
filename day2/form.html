@@ -4,87 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        h1{
-            font-size:xx-large;
-            margin-top: 100px;
-        }
-        form{
-            margin-top: 140px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        table{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        button{
-            margin-left: 90px;
-            border: 2px solid black;
-        }
-       
-    </style>
+    <link rel="Stylesheet" href="form.css">
 </head>
 <body>
-   <center><h1>Sign Up</h1></center> 
-    <form action="login.html">
-        <table width="400px" height="200px">
-           <tr>
-            <td>
+   <div class="form">
+    <center><h1>Sign Up</h1></center> 
+    <form action="login.html" class="form1">
             <label for="fname">FirstName:</label>
-            </td>
-            <td>
             <input type="text" placeholder="Enter ur firstname" required>
-            </td>
-           </tr> 
-           <tr>
-            <td>
             <label for="lname">LastName:</label>
-            </td>
-            <td>
             <input type="text" placeholder="Enter ur lastname" >
-            </td>
-           </tr> 
-        
-           <tr>
-            <td>
             <label for="email">Email:</label>
-            </td>
-            <td>
             <input type="email" placeholder="Enter ur mail" required>
-            </td>
-           </tr> 
-           <tr>
-            <td>
             <label for="pass">Password:</label>
-            </td>
-            <td>
             <input type="password" placeholder="Enter ur password" required>
-            </td>
-           </tr> 
-           <tr>
-            <td>
             <label for="date">Date:</label>
-            </td>
-            <td>
             <input type="date" placeholder="Enter ur name" required>
-            </td>
-           </tr> 
-           <tr>
-            <td>
             <label for="ph">PhoneNumber:</label>
-            </td>
-            <td>
             <input type="tel" placeholder="Enter ur name" required>
-            </td>
-           </tr> 
-        </table>
-        <section>
-        <button>Submit</button>
-        <h3>Already have an account?<a href="login.html" >Login</a></h3>
-        </section>
-    </form>
+            <div class="radio-group">
+                <label>Gender:</label>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+              </div>
+            
+</form>
+        <button class="bt">Submit</button>
+        <h3 class="btn">Already have an account?<a href="login.html" >Login</a></h3>
 </body>
 </html>
