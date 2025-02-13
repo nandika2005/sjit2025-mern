@@ -1,0 +1,30 @@
+body{
+    margin: 0px;
+}
+form{ 
+    width: 60vw;
+    height: 60vh;
+   margin-top: 10% ;
+   margin-left: 38%;
+margin-bottom: 20%;
+margin-right: 25%;
+}
+h1{
+    margin-right:140px ;
+    background-color: aqua;
+}
+input{
+    display: block;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+}
+label{
+    margin-left:100px;
+}
+ button{
+    margin-left:150px;
+    margin-top: 50px;
+ }
