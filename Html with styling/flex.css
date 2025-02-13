@@ -22,3 +22,14 @@ nav{
     background-color: crimson;
     color:aqua;
 }
+.ski{
+display: none;
+}
+.linki:hover .ski{
+display: block;
+transform: translate(0px,100px);
+}
+li{
+    list-style-type: none;
+}
+
