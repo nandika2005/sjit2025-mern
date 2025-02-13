@@ -1,0 +1,9 @@
+.trans{
+    background-color: darkgreen;
+    transition:width 5s height 5s padding 5s ;
+}
+.trans:hover{
+    background-color: chocolate;
+    width:200px;
+    transform: rotate(180deg);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="Stylesheet" href="trsnsitionanime.css">
+    <style>
+        @keyframes anima{
+            0%{
+                background-color: beige;
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                background-color: rgb(92, 92, 4);
+                top: 0px;
+                left: 100px; 
+            }
+            50%{
+                background-color: blueviolet;
+                top:100px;
+                left:100px;
+            }
+            75%{
+                background-color: cadetblue;
+                top:100px;
+                left: 0px;
+            }
+            100%{
+                background-color: hotpink;
+                top:0px;
+                left:0px;
+            }
+        }
+        .anime{
+            position: relative;
+            animation-name: anima;
+            animation-duration: 6s;
+            width:100px;
+            height:100px;
+            animation-iteration-count: infinite;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="trans">This is a transition example</h1>
+    <h1>This is animation</h1>
+    <h2 class="anime">Anime</h2>
+</body>
+</html>
