@@ -1,0 +1,25 @@
+//Relational operations
+a=5;
+b='5';
+console.log(a==b)
+console.log(a===b)
+//Logical
+console.log(true&&10)
+console.log(true&&false)
+console.log(true&&0)
+console.log(false&&true)
+console.log(true||false)
+console.log(true||10)
+console.log(false||10)
+console.log(10||5)
+//Arithmetic 
+a=10
+b=20
+console.log(a+b)
+console.log(b-a)
+console.log(b/a)
+console.log(b%a)
+console.log(a*b)
+//bitwise
+console.log(55<<2)
+console.log(64<<1)
