@@ -3,22 +3,21 @@ import About from './components/functionalcompo/About.jsx';
 import Gallery from './components/functionalcompo/Gallery.jsx';
 import Contact from './components/functionalcompo/Contact.jsx';
 import Signup from './components/functionalcompo/Signup.jsx';
-import ClassComponent from './components/classcomponent/ClassComponent.jsx';
-import Navbar from './components/functionalcompo/Navbar.jsx'
+import Navbar from './components/functionalcompo/Navbar.jsx';
+import{BrowserRouter,Routes,Route} from 'react-router-dom';
 function App() {
   return (
     <main>
-        <Navbar />
-        <hr></hr>
-        <Home />
-        <hr></hr>
-        <About />
-        <hr></hr>
-        <Gallery />
-        <hr></hr>
-        <Contact />
-        <hr></hr>
-        <Signup />
+       <BrowserRouter>
+       <Navbar />
+       <Routes>
+        <Route path='/' element={ <Home sjit="Hello"/>} />
+        <Route path='/About' element={<About />}/>
+        <Route path='/Gallery' element={<Gallery/>}/>
+        <Route path='/Contact' element={<Contact/>}/>
+        <Route path='/Signup' element={<Signup/>}/>
+        </Routes>
+        </BrowserRouter>
   </main>
   );
 }
