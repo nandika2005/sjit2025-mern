@@ -5,6 +5,7 @@ import Contact from './components/functionalcompo/Contact.jsx';
 import Signup from './components/functionalcompo/Signup.jsx';
 import Navbar from './components/functionalcompo/Navbar.jsx';
 import{BrowserRouter,Routes,Route} from 'react-router-dom';
+import UseEffect from './components/functionalcompo/Hooks/UseEffect.jsx';
 function App() {
   return (
     <main>
@@ -14,6 +15,7 @@ function App() {
         <Route path='/' element={ <Home sjit="Hello"/>} />
         <Route path='/About' element={<About />}/>
         <Route path='/Gallery' element={<Gallery/>}/>
+        <Route path='/UseEffect' element={<UseEffect/>}/>
         <Route path='/Contact' element={<Contact/>}/>
         <Route path='/Signup' element={<Signup/>}/>
         </Routes>
