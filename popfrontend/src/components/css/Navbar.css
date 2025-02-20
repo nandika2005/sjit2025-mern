@@ -4,25 +4,38 @@ body{
 nav{
     display: flex;
     list-style-type: none;
-    background-color: rgb(187, 63, 131);
+    background-color: rgb(62, 119, 204);
     color: white;
     justify-content: space-around;
     padding:10px;
     margin: 0;
+    color:white;
+
 }
 
 .box{
     display: inline-block;
     position: relative;
+    padding: 5px;
+   
 }
 .box-1{
     display: block;
     position: absolute;
-    background-color: aquamarine;
+    background-color: rgb(105, 115, 118);
     padding: 5px;
-    top:6px;
+    top:10px;
 }
 .box-2{
     display: block;
     padding: 5px;
+}
+li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: #ffffff;
+}
+.box-2 a{
+    text-decoration: none;
+    color: #ffffff;
 }

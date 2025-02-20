@@ -2,7 +2,7 @@ function Home(props){
    var styling={
       textAlign:"center",
       color:"white",
-      backgroundColor:"aqua"
+      backgroundColor:"grey"
    }
   return(
    <div>
