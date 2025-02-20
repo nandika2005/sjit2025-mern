@@ -4,6 +4,7 @@ import Gallery from './components/functionalcompo/Gallery.jsx';
 import Contact from './components/functionalcompo/Contact.jsx';
 import Signup from './components/functionalcompo/Signup.jsx';
 import Navbar from './components/functionalcompo/Navbar.jsx';
+import Login from './components/functionalcompo/Login.jsx';
 import{BrowserRouter,Routes,Route} from 'react-router-dom';
 import UseEffect from './components/functionalcompo/Hooks/UseEffect.jsx';
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path='/UseEffect' element={<UseEffect/>}/>
         <Route path='/Contact' element={<Contact/>}/>
         <Route path='/Signup' element={<Signup/>}/>
+        <Route path='/login' element={<Login/>}/>
         </Routes>
         </BrowserRouter>
   </main>
