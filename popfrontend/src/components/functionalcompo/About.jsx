@@ -12,11 +12,11 @@ function About(){
     <h3>Updating state:{num}</h3>
     <button onClick={()=>setNum(num+1)}>+</button>
    <div>
-   <button onClick={()=>setNum(num=0)}>reset</button>
+   <button onDoubleClick={()=>setNum(num=0)}>reset</button>
       </div> 
       <div>
          <textarea></textarea>
-      </div>
+      </div>   
    </div>
    );
 }
