@@ -28,10 +28,12 @@ const Navbar = () => {
                        <li className="box-2"><Link to="/UseEffectApi">UseEffectApi</Link></li>
                        <li className="box-2"><Link to="/Useref">UseRef</Link></li>
                        <li className="box-2"><Link to="/UseMemo">UseMemo</Link></li>
+                       <li className="box-2"><Link to="/UseCallBack">UseCallBack</Link></li>
+                       <li className="box-2"><Link to="/Usememoize">Usememoize</Link></li>
                      </ol>
                    )}
                 </div>
-             
+                <li><Link to='/Hoc'>HOC</Link></li>
                 <li><Link to='/Contact'>Contact</Link></li>
                 <li><Link to='/login'>Login</Link></li>
             </nav>

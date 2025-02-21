@@ -10,6 +10,10 @@ import UseEffect from './components/functionalcompo/Hooks/UseEffect.jsx';
 import UseEffectApi from './components/functionalcompo/Hooks/UseEffectApi.jsx';
 import UseRef from './components/functionalcompo/Hooks/UseRef.jsx';
 import UseMemo from './components/functionalcompo/Hooks/UseMemo.jsx';
+import UseCallBack from './components/functionalcompo/Hooks/UseCallBack.jsx';
+import UseMemoize from './components/functionalcompo/Hooks/UseMemoize.jsx';
+import Hoc from './components/functionalcompo/HoC/Hoc.jsx';
+
 function App() {
   return (
     <main>
@@ -23,6 +27,9 @@ function App() {
         <Route path='/UseEffectApi' element={<UseEffectApi/>}/>
         <Route path='/UseRef' element={<UseRef/>}/>
         <Route path='/UseMemo' element={<UseMemo/>}/>
+        <Route path='/UseCallBack' element={<UseCallBack/>}/>
+        <Route path='/Usememoize' element={<UseMemoize/>}/>
+        <Route path='/Hoc' element={<Hoc/>}/>
         <Route path='/Contact' element={<Contact/>}/>
         <Route path='/Signup' element={<Signup/>}/>
         <Route path='/login' element={<Login/>}/>
