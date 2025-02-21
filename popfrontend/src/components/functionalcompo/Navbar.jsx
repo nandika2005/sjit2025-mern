@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 const Navbar = () => {
     const [drop, setDropdownVisible] = useState(false);
+    const [drop1, setDropdownVisible1] = useState(false);
 
     return (
         <header>
@@ -34,6 +35,17 @@ const Navbar = () => {
                    )}
                 </div>
                 <li><Link to='/Hoc'>HOC</Link></li>
+                <div className="box"
+                onMouseEnter={() => setDropdownVisible1(true)}
+                onMouseLeave={() => setDropdownVisible1(false)}>
+                  <span style={{ color: "white", cursor: "pointer" }} >Memoization</span>
+                  {drop1 && (
+                  <ol className="box-1">
+                    <li className="box-2"><Link to="/Memo">Memo</Link></li>
+                    <li className="box-2"><Link to="/Lazy">LazyLoading</Link></li>
+                  </ol>
+                  )}
+                </div>
                 <li><Link to='/Contact'>Contact</Link></li>
                 <li><Link to='/login'>Login</Link></li>
             </nav>

@@ -8,8 +8,8 @@ function Login(){
    <label htmlFor="PName">Password:</label>
    <input type="password" placeholder="Enter your password" required/>
    <button>Submit</button>
+   <p><Link to="/Signup">Create an account?</Link></p>
    </form> 
-   <div><Link to="/Signup">Create an account?</Link></div>
    </div>)
 }
 export default Login;
