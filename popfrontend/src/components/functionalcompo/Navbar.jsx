@@ -46,6 +46,7 @@ const Navbar = () => {
                   </ol>
                   )}
                 </div>
+                <li><Link to='/Student'>ContextAPI</Link></li>
                 <li><Link to='/Contact'>Contact</Link></li>
                 <li><Link to='/login'>Login</Link></li>
             </nav>
