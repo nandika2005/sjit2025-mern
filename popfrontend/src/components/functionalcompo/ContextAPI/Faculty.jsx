@@ -4,8 +4,8 @@ import Exam from "./Exam";
 const Faculty=(res)=>{
     return(
         <div>
-            <Exam/>
             <h1>Faculty correcting papers</h1>
+            <CoE/>
         </div>
     )
 }

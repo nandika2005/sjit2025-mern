@@ -15,7 +15,7 @@ import UseMemoize from './components/functionalcompo/Hooks/UseMemoize.jsx';
 import Hoc from './components/functionalcompo/HoC/Hoc.jsx';
 import Memo from './components/functionalcompo/Memoization/Memo.jsx';
 import LazyLoadingAndSuspense from './components/functionalcompo/Memoization/LazyLoadingAndSuspense.jsx';
-import CoE from './components/functionalcompo/CoE.jsx';
+import Exam from './components/functionalcompo/ContextAPI/Exam.jsx';
 
 function App() {
   return (
@@ -38,7 +38,7 @@ function App() {
         <Route path='/login' element={<Login/>}/>
         <Route path='/Memo' element={<Memo/>}/>
         <Route path='/Lazy' element={<LazyLoadingAndSuspense/>}/>
-        <Route path='/Student' element={<CoE/>}/>
+        <Route path='/Student' element={<Exam/>}/>
         </Routes>
         </BrowserRouter>
   </main>

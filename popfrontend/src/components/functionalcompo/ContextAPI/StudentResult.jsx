@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { ResultPublish } from "../CoE";
+
 const StudentResult=()=>{
     const result=useContext(ResultPublish)
 return(
