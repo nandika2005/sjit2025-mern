@@ -1,17 +1,38 @@
+import { useState } from 'react';
 import '../css/Signup.css'
 import { Link } from 'react-router-dom';
+import axios from 'axios'
 function Signup(){
+   const [firstName,setFN]=useState("")
+   const [lastName,setLN]=useState("")
+   const [email,setEM]=useState("")
+   const [password,setPass]=useState("")
+   const [phoneNumber,setPh]=useState(0)
+   const handleSubmit= async(event)=>{
+      event.preventDefault();
+      const req=await axios.post("http://localhost:3002/signup",{
+         firstName: firstName,
+         lastName: lastName,
+         email: email,
+         password:password,
+         phoneNumber:phoneNumber
+      });
+      const message=req.data.message;
+      alert(message);
+   };
    return <div>
-   <form>
-   <label for="FName">FirstName:</label>
-   <input type="text" placeholder="Enter your first name" required/>
-   <label for="LName">LastName:</label>
-   <input type="text" placeholder="Enter your Last name" required/>
-   <label for="EName">EmailId:</label>
-   <input type="email" placeholder="Enter your mail-id"required/>
-   <label for="PName">Password:</label>
-   <input type="password" placeholder="Enter your password" required/>
-   <div><button>Submit</button></div>
+   <form onSubmit={handleSubmit}>
+   <label htmlFor="FName">FirstName:</label>
+   <input type="text" value={firstName}onChange={e=>setFN(e.target.value)} placeholder="Enter your first name" required/>
+   <label htmlFor="LName">LastName:</label>
+   <input type="text" value={lastName}onChange={e=>setLN(e.target.value)} placeholder="Enter your Last name" required/>
+   <label htmlFor="EName">EmailId:</label>
+   <input type="email" value={email}onChange={e=>setEM(e.target.value)} placeholder="Enter your mail-id"required/>
+   <label htmlFor="PName">Password:</label>
+   <input type="password" value={password}onChange={e=>setPass(e.target.value)} placeholder="Enter your password" required/>
+   <label htmlFor="PhName">PhoneNumber:</label>
+   <input type="number" value={phoneNumber}onChange={e=>setPh(e.target.value)} placeholder="Enter your phoneNumber" required/>
+   <div className='butt'><button>Submit</button></div>
    <Link to="/login">Already have an account?</Link>
    </form>
    </div>
