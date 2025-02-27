@@ -7,7 +7,7 @@ function Login(){
    const[password,setPass]=useState("")
    const handleLogin=async(event)=>{
       event.preventDefault();
-      const req=await axios.post("http://localhost:3002/login",{
+      const req=await axios.post("https://sjit2025-mern.onrender.com/login",{
          email: email,
          password:password,
       });

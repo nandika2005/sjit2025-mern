@@ -10,7 +10,7 @@ function Signup(){
    const [phoneNumber,setPh]=useState(0)
    const handleSubmit= async(event)=>{
       event.preventDefault();
-      const req=await axios.post("https://sjit2025-mern.onrender.com",{
+      const req=await axios.post("https://sjit2025-mern.onrender.com/signup",{
          firstName: firstName,
          lastName: lastName,
          email: email,
